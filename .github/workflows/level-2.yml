@@ -13,5 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: echo Hi from level 2
-      - name: Run the action
+      - name: Run the action remotely
+        continue-on-error: true
+        uses: joanise/test_gha_infra/.github/actions/level-3@v1.3
+      - name: Run the action locally
         uses: ./.github/actions/level-3
