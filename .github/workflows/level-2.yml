@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: echo Hi from level 2
       - name: Run the action
         uses: ./.github/actions/level-3
