@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run the action
-        uses: .github/actions/level-3
+        uses: ./.github/actions/level-3
