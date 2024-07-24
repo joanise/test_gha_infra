@@ -9,4 +9,4 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: .github/workflows/level-2.yml
+    uses: alliepiper/test_gha_infra/.github/workflows/level-2.yml@v1
