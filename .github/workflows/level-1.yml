@@ -8,5 +8,9 @@ on:
   workflow_call:
 
 jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hi from level 1
   call-reusable-workflow:
     uses: ./.github/workflows/level-2.yml
