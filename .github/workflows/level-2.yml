@@ -1,0 +1,15 @@
+name: Test Workflow
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -euo pipefail {0}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  invoke-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run the action
+        uses: .github/actions/level-3

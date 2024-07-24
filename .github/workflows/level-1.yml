@@ -1,0 +1,12 @@
+name: Test Workflow
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -euo pipefail {0}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-reusable-workflow:
+    uses: .github/workflows/level-2.yml

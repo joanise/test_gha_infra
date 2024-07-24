@@ -1,0 +1,9 @@
+name: "Test Action"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Output
+      shell: bash
+      run: |
+        echo "Hello World!"
